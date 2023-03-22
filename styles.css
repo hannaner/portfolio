@@ -1,0 +1,109 @@
+/* font-family: 'Archivo', sans-serif;
+font-family: 'Archivo Black', sans-serif;
+font-family: 'Roboto Mono', monospace; */
+
+/* --------- Global styles --------- */
+
+:root {
+
+}
+
+section {
+    height: 80vh;
+}
+
+h1, h2 {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+h3, h4 {
+    font-family: 'Archivo', sans-serif;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+/* --------- Intro/Home section --------- */
+section.home-container {
+    display: grid;
+    position: relative;
+    background-color: pink;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+section.home-container div#headshot { 
+    grid-area: 1 / 1 / 2 / 2;
+}
+section.home-container div#name {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+
+/* --------- Navbar --------- */
+nav {
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3vh;
+    color: var(--beaver);
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--beaver);
+}
+
+nav a:hover {
+    color: var(--reseda-green);
+    font-weight: bold;
+}
+
+.navbar-logo {
+    line-height: 0;
+}
+
+.navbar-menu {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-menu li {
+    padding: 0px 10px;
+}
+
+/* nav img.logo {
+    max-height: 4rem;
+    flex-shrink: 0;
+} */
+
+/* --------- Projects --------- */
+
+/* --------- About me --------- */
+
+/* --------- Contact --------- */
+.contact-container a {
+    text-decoration: none;
+}
+
+
+/* --------- Footer --------- */
