@@ -17,21 +17,21 @@
     <!-- Navigation menu -->
     <nav id="navbar">
         <div class="navbar-logo">
-            <p>logo</p>
+            <a href="#home"><p>logo</p></a>
         </div>
         <div class="navbar-menu">
             <ul></ul>
             <ul>
-                <li><a href="">projects</a></li>
-                <li><a href="">about me</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#about-me">about me</a></li>
                 <li><a href="">resume</a></li>
-                <li><a href="">contact</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </div>
     </nav>
     
     <!-- Home -->
-    <section class="home-container">
+    <section class="home-container" id="home">
         <!-- profile picture -->
         <div id="headshot">
             <img src="/assets/profile.png">
@@ -45,11 +45,13 @@
     </section>
     
     <!-- Projects -->
-    <section class="project-container">
+    <section class="project-container" id="projects">
         <h2>Projects</h2>
         <!-- Project 1: Wastewise -->
         <div class="project-item">
-            <img href="/assets/wastewise-2.png">
+            <div>
+                <img src="/assets/wastewise-2.png">
+            </div>
             <h4>Wastewise</h4>
             <p>Track your groceries and minimize food waste with Wastewise. Built full-stack application independently using HTML, CSS, React, Node, Django, Python, and PostgreSQL. Deployed on Render.</p>
 
@@ -62,7 +64,9 @@
         
         <!-- Project 2: iPasta -->
         <div class="project-item">
-            <img src="/assets/ipasta.jpg">
+            <div>
+                <img src="/assets/ipasta.jpg">
+            </div>
             <h4>iPasta</h4>
             <p>Turn pasta dreams come true by building your own pasta bowl! Focused on front-end development and project management on a four-person team. Full-stack application using HTML, CSS, MongoDB, Node, Express, and React. Deployed on Render.</p>
 
@@ -75,7 +79,9 @@
 
         <!-- Project 3: Match that card -->
         <div class="project-item">
-            <img src="/assets/match.jpg">
+            <div>
+                <img src="/assets/match.jpg">
+            </div>
             <h4>Match that card</h4>
             <p>Put your memory to the test by finding and matching a card's pair. Solo project using HTML, CSS, and JavaScript. Deployed via GitHub pages.</p>
 
@@ -89,7 +95,7 @@
     </section>
     
     <!-- About me -->
-    <section class="about-me-container">
+    <section class="about-me-container" id="about-me">
         <h2>About me</h2>
         <div class="about-me-items">
             <div class="about-me-item-1">
@@ -117,7 +123,7 @@
     </section>
 
     <!-- Contact -->
-    <section class="contact-container">
+    <section class="contact-container" id="contact">
         <h2>Let's connect</h2>
         <div>
             <h4>Resume</h4>
