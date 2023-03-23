@@ -4,12 +4,18 @@ font-family: 'Roboto Mono', monospace; */
 
 /* --------- Global styles --------- */
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
 
 }
 
 section {
     height: 80vh;
+    /* position: relative; */
 }
 
 h1, h2 {
@@ -25,30 +31,9 @@ p {
 
 }
 
-/* --------- Intro/Home section --------- */
-section.home-container {
-    display: grid;
-    position: relative;
-    background-color: pink;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+body {
+    display: inline-block;
 }
-
-section.home-container div#headshot { 
-    grid-area: 1 / 1 / 2 / 2;
-}
-section.home-container div#name {
-    grid-area: 1 / 2 / 2 / 3;
-}
-
 
 /* --------- Navbar --------- */
 nav {
@@ -59,6 +44,8 @@ nav {
     margin-bottom: 3vh;
     color: var(--beaver);
     position: relative;
+    overflow: hidden;
+    background-color: orange;
 }
 
 nav a {
@@ -96,9 +83,66 @@ nav a:hover {
     flex-shrink: 0;
 } */
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* --------- Intro/Home section --------- */
+section.home-container {
+    display: grid;
+    /* position: relative; */
+    background-color: pink;
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    grid-template-columns: .5fr 1.5fr .2fr 1.5fr 0.5fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+section.home-container div#headshot { 
+    grid-area: 3 / 2 / 4 / 3;
+}
+section.home-container div#name {
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+section.home-container img {
+    display: block;
+    height: 400px;
+}
+
+section.home-container h1 {
+    font-size: 75px;
+    margin-bottom: 5px;
+    text-transform: lowercase; 
+}
+
+section.home-container h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: larger;
+}
+
+
 /* --------- Projects --------- */
+.project-container div {
+    /* position: relative; */
+}
+
+.project-container img {
+    height: 300px;
+}
 
 /* --------- About me --------- */
+.about-me-container div {
+    /* position: relative; */
+}
 
 /* --------- Contact --------- */
 .contact-container a {

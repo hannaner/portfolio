@@ -10,11 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@600&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    
 
 </head>
 <body>
     <!-- Navigation menu -->
-    <nav>
+    <nav id="navbar">
         <div class="navbar-logo">
             <p>logo</p>
         </div>
@@ -33,7 +34,7 @@
     <section class="home-container">
         <!-- profile picture -->
         <div id="headshot">
-            <h2>place image here</h2>
+            <img src="/assets/profile.png">
         </div>
 
         <!-- name title -->
@@ -48,12 +49,12 @@
         <h2>Projects</h2>
         <!-- Project 1: Wastewise -->
         <div class="project-item">
-            <img>
+            <img href="/assets/wastewise-2.png">
             <h4>Wastewise</h4>
             <p>Track your groceries and minimize food waste with Wastewise. Built full-stack application independently using HTML, CSS, React, Node, Django, Python, and PostgreSQL. Deployed on Render.</p>
 
             <div class="project-action-btns">
-                <a href="https://wastewise.onrender.com/"><button type="button" id="view-site">View live</button></a>
+                <a src="https://wastewise.onrender.com/"><button type="button" id="view-site">View live</button></a>
 
                 <a href="https://github.com/hannaner/wastewise-client"><button type="button" id="github-repo">GitHub</button></a>
             </div>
@@ -61,7 +62,7 @@
         
         <!-- Project 2: iPasta -->
         <div class="project-item">
-            <img>
+            <img src="/assets/ipasta.jpg">
             <h4>iPasta</h4>
             <p>Turn pasta dreams come true by building your own pasta bowl! Focused on front-end development and project management on a four-person team. Full-stack application using HTML, CSS, MongoDB, Node, Express, and React. Deployed on Render.</p>
 
@@ -74,7 +75,7 @@
 
         <!-- Project 3: Match that card -->
         <div class="project-item">
-            <img>
+            <img src="/assets/match.jpg">
             <h4>Match that card</h4>
             <p>Put your memory to the test by finding and matching a card's pair. Solo project using HTML, CSS, and JavaScript. Deployed via GitHub pages.</p>
 
@@ -129,7 +130,7 @@
             <p></p>
         </div>
     </section>
-    
+    <script src="index.js"></script>
 </body>
 
 <footer>
